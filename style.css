@@ -1,5 +1,7 @@
 /* This font gets applied to ALL the elements in the body */
 body {
+    /* browser adds a default margin in body to ensure proper display in edged phones, so making that default value to 0*/
+    margin: 0;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -12,7 +14,6 @@ h1 {
 .name-highlight {
     color: orange;
 }
-
 
 .half-width {
     /* width of each div set as 40% of the total width */
@@ -27,4 +28,30 @@ h1 {
 .half-width img {
     /* image to take up 100% of the total div space */
     width: 100%;
+}
+
+.top-banner {
+    /* since float is present, the space inside which the elements were present, gets omitted, i.e., the height/width of the space compresses to 0 */
+    background-image: url("images/top-banner.png");
+}
+
+section { 
+    /* to solve the "background img not visible" problem, add a height to the section inside which the img resides*/
+    height: 500px;
+    /* to prevent repeat of background img within the alloted width  */
+    background-repeat: no-repeat;
+}
+
+.link-button {
+    /* to remove the underline for the link button */
+    text-decoration: none;
+    /* provides a color gradient to the button at a 45deg angle */
+    background-image: linear-gradient(45deg, lightSalmon, tomato);
+    /* to make a button box */
+    padding: 10px 40px;
+    border-radius: 5px;
+    /* color and font weight of text inside button */
+    color: white;
+    font-weight: bold;
+
 }
