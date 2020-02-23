@@ -10,6 +10,14 @@ h1 {
     font-size: 50px;
 }
 
+h2 {
+    font-size: 40px;
+}
+
+p {
+    color: dimgray;
+}
+
 /* To highlight the class .name-highlight */
 .name-highlight {
     color: orange;
@@ -33,13 +41,14 @@ h1 {
 .top-banner {
     /* since float is present, the space inside which the elements were present, gets omitted, i.e., the height/width of the space compresses to 0 */
     background-image: url("images/top-banner.png");
+    /* to prevent repeat of background img within the alloted width  */
+    background-repeat: no-repeat;
 }
 
 section { 
     /* to solve the "background img not visible" problem, add a height to the section inside which the img resides*/
     height: 500px;
-    /* to prevent repeat of background img within the alloted width  */
-    background-repeat: no-repeat;
+    padding-bottom: 150px;
 }
 
 .link-button {
@@ -53,5 +62,11 @@ section {
     /* color and font weight of text inside button */
     color: white;
     font-weight: bold;
+}
 
+.dream-area {
+    background-image: url("images/dream-bg.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    
 }
