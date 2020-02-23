@@ -1,0 +1,30 @@
+/* This font gets applied to ALL the elements in the body */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Increases the font size of h1 to 50px */
+h1 {
+    font-size: 50px;
+}
+
+/* To highlight the class .name-highlight */
+.name-highlight {
+    color: orange;
+}
+
+
+.half-width {
+    /* width of each div set as 40% of the total width */
+    width: 40%;
+    /* floats boxes side-by-side from the left */
+    float: left;
+    /* margin(external) and padding(internal) of divs */
+    margin-left: 5%;
+    padding-left: 2%;
+}
+
+.half-width img {
+    /* image to take up 100% of the total div space */
+    width: 100%;
+}
